@@ -4,6 +4,10 @@ project(usb4java C)
 set(PROJECT_VERSION 1.3.1)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/.cmake/Modules/")
 
+SET(JAVA_INCLUDE_PATH "$ENV{JAVA_HOME}/include")
+SET(JAVA_INCLUDE_PATH2 "$ENV{JAVA_HOME}/include/darwin")
+SET(JAVA_AWT_INCLUDE_PATH NotNeeded)
+
 find_package(JNI REQUIRED)
 find_package(LibUsb REQUIRED)
 
